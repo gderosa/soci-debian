@@ -1,0 +1,16 @@
+Description: Do not run tests
+ Especially mysql or, generally, tests requiring a running server.
+Forwarded: not-needed
+Origin: vendor
+Author: Guido De Rosa <guido.derosa@vemarsas.it>
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -43,7 +43,7 @@
+ boost_report_value(SOCI_PLATFORM_NAME)
+ boost_report_value(SOCI_COMPILER_NAME)
+ 
+-option(SOCI_TESTS "Enable build of collection of SOCI tests" ON)
++option(SOCI_TESTS "Enable build of collection of SOCI tests" OFF)
+ boost_report_value(SOCI_TESTS)
+ 
+ # Put the libaries and binaries that get built into directories at the
