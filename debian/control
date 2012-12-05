@@ -1,0 +1,44 @@
+Source: soci
+Priority: extra
+Maintainer: Guido De Rosa <guido.derosa@vemarsas.it>
+Build-Depends: debhelper (>= 8.0.0), cmake,
+ libmysqlclient-dev
+Standards-Version: 3.9.3
+Section: libs
+Homepage: http://soci.sourceforge.net/
+#Vcs-Git: git://git.debian.org/collab-maint/soci.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/soci.git;a=summary
+
+Package: libsoci-core-dev
+Section: libdevel
+Architecture: any
+Depends: libsoci-core (= ${binary:Version})
+Description: C++ Database Access Library (devel)
+ Database access library for C++ that makes the illusion of
+ embedding SQL queries in the regular C++ code, staying entirely
+ within Standard C++.
+ .
+ This package provides the development headers.
+
+Package: libsoci-core
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: C++ Database Access Library (core)
+ Database access library for C++ that makes the illusion of
+ embedding SQL queries in the regular C++ code, staying entirely
+ within Standard C++.
+ .
+ This package provides the shared library.
+
+Package: libsoci-mysql
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: C++ Database Access Library (core)
+ Database access library for C++ that makes the illusion of
+ embedding SQL queries in the regular C++ code, staying entirely
+ within Standard C++.
+ .
+ This package provides the MySQL backend.
+

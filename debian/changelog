@@ -1,0 +1,5 @@
+soci (3.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Guido De Rosa <guido.derosa@vemarsas.it>  Tue, 04 Dec 2012 16:15:16 +0100
