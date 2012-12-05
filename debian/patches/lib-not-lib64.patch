@@ -1,0 +1,19 @@
+Description: use lib/ not lib64/
+Forwarded: not-needed
+Origin: vendor
+Author: Guido De Rosa <guido.derosa@vemarsas.it>
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -68,11 +68,7 @@
+ # Installation
+ #################################################################################
+ 
+-if(APPLE OR CMAKE_SIZEOF_VOID_P EQUAL 4)
+-  set(SOCI_LIBDIR "lib")
+-else()
+-  set(SOCI_LIBDIR "lib64")
+-endif()
++set(SOCI_LIBDIR "lib")
+ 
+ set(BINDIR "bin" CACHE PATH "The directory to install binaries into.")
+ set(LIBDIR ${SOCI_LIBDIR} CACHE PATH "The directory to install libraries into.")

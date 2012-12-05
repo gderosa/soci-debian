@@ -68,11 +68,7 @@ include(SociDependencies)
 # Installation
 #################################################################################
 
-if(APPLE OR CMAKE_SIZEOF_VOID_P EQUAL 4)
-  set(SOCI_LIBDIR "lib")
-else()
-  set(SOCI_LIBDIR "lib64")
-endif()
+set(SOCI_LIBDIR "lib")
 
 set(BINDIR "bin" CACHE PATH "The directory to install binaries into.")
 set(LIBDIR ${SOCI_LIBDIR} CACHE PATH "The directory to install libraries into.")
