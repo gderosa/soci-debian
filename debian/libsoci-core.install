@@ -1,1 +1,2 @@
-usr/lib/lib*.so.*
+usr/lib/libsoci_core.so.*
+usr/lib/libsoci_empty.so.*
