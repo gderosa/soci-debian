@@ -1,3 +1,9 @@
+soci (3.2.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Guido De Rosa <guido.derosa@vemarsas.it>  Sat May 18 00:21:50 CEST 2013
+
 soci (3.1.0-1) unstable; urgency=low
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>

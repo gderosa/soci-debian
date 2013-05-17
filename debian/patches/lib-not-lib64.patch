@@ -4,9 +4,9 @@ Origin: vendor
 Author: Guido De Rosa <guido.derosa@vemarsas.it>
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -68,11 +68,7 @@
+@@ -70,11 +70,7 @@
  # Installation
- #################################################################################
+ ###############################################################################
  
 -if(APPLE OR CMAKE_SIZEOF_VOID_P EQUAL 4)
 -  set(SOCI_LIBDIR "lib")
